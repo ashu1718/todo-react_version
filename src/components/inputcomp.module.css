@@ -1,0 +1,20 @@
+.inp{
+    width: 100%;
+    display: inline;
+    margin: 5px;
+    
+}
+
+.input-class{
+    display: grid  ;
+    justify-content: center;
+    grid-template-columns: 220px 180px 100px;
+    column-gap: 20px;
+    row-gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    font-size: 20px;
+    
+    
+    
+}

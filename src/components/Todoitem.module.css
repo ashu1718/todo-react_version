@@ -1,0 +1,17 @@
+.out-item{
+    display: inline-flex;
+ 
+ }
+ .out-element{
+        
+    display: grid  ;
+    justify-content: center;
+    grid-template-columns: 215px 170px 100px;
+    column-gap: 20px;
+    row-gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    font-size: 20px;
+     
+     
+ }
