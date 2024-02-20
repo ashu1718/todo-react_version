@@ -1,7 +1,9 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useContext } from "react";
+import { StoredItems } from "../store/storedItem";
 import styles from "./inputcomp.module.css";
 import { MdDownloadDone } from "react-icons/md";
-function Input({ onclickAdd }) {
+
+function Input() {
   /* const [work, addWork] = useState("");
   const [date, addDate] = useState("");
 
@@ -14,12 +16,13 @@ function Input({ onclickAdd }) {
   let workElement = useRef();
   let dateElement = useRef();
 
+  const { AddNewItem } = useContext(StoredItems);
   const buttonClicked = () => {
     const work = workElement.current.value;
     const date = dateElement.current.value;
     workElement.current.value = "";
     dateElement.current.value = "";
-    onclickAdd(work, date);
+    AddNewItem(work, date);
     /*addDate("");
     addWork("");*/
   };
